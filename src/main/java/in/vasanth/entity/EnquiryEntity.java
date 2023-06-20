@@ -1,0 +1,18 @@
+package in.vasanth.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class EnquiryEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer enquiryId;
+	private String enquiryStatus;
+
+}
